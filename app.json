@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "mobile",
-    "slug": "mobile",
+    "name": "simple-finance",
+    "slug": "simple-finance",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "simple-finance",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash.png",
@@ -34,7 +34,7 @@
     ],
     "experiments": {
       "typedRoutes": true,
-      "tsconfigPaths": false
+      "tsconfigPaths": true
     }
   }
 }
