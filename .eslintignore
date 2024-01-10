@@ -10,3 +10,4 @@ dist
 env
 expo
 constants
+tailwind.config.js
