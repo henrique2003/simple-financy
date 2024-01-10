@@ -1,0 +1,12 @@
+tsconfig.json
+package.
+package-lock.
+metro.config.js
+babel.config.js
+app.json
+.gitignore
+node_modules
+dist
+env
+expo
+constants
