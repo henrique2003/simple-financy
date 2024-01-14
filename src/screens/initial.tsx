@@ -4,8 +4,11 @@ import { ImageBackground, Text, View } from 'react-native'
 import { bgInitial } from '@/assets'
 import { ButtonDark, ButtonLight } from '@/components'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
+import { useRouter } from 'expo-router'
 
 export const Initial: React.FC = () => {
+  const router = useRouter()
+
   return (
     <SafeAreaProvider>
       <View className='flex-1 justify-center items-center'>
@@ -16,13 +19,16 @@ export const Initial: React.FC = () => {
             </View>
           </ImageBackground>
         </View>
-        <View className='w-full p-10 bg-white flex'>
+        <View className='w-full p-10 bg-white flex justify-center items-center min-h-[270px]'>
           <Text className='text-sm text-zinc-700'>Conheça agora uma maneira facil de orgazinar os seus gastos!</Text>
           <ButtonDark
             text='Cadastrer-se'
             className='mb-5 mt-5'
           />
-          <ButtonLight text='Entrar' />
+          <ButtonLight
+            text='Entrar'
+            onPress={() => router.push('/login')}
+          />
         </View>
       </View>
     </SafeAreaProvider>
