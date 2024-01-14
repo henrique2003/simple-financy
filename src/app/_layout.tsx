@@ -22,6 +22,7 @@ import {
   Poppins_900Black,
   Poppins_900Black_Italic
 } from '@expo-google-fonts/poppins'
+import { StatusBar } from 'react-native'
 
 export {
   ErrorBoundary
@@ -67,6 +68,7 @@ export default function RootLayout(): JSX.Element {
 function RootLayoutNav(): JSX.Element {
   return (
     <ThemeProvider value={DefaultTheme}>
+      <StatusBar barStyle='light-content' />
       <Stack screenOptions={{ headerShown: false }}>
         <Stack.Screen name="index" />
       </Stack>

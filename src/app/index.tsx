@@ -1,12 +1,8 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { Initial } from '@/screens'
 
-const Initial: React.FC = () => {
-  return (
-    <View className='flex-1 justify-center items-center bg-white'>
-      <Text className='mt-10'>Ola Simple finance</Text>
-    </View>
-  )
+const Index: React.FC = () => {
+  return <Initial />
 }
 
-export default Initial
+export default Index
