@@ -24,6 +24,7 @@ export const Initial: React.FC = () => {
           <ButtonDark
             text='Cadastrer-se'
             className='mb-5 mt-5'
+            onPress={() => router.push('/register')}
           />
           <ButtonLight
             text='Entrar'

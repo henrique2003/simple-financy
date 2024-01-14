@@ -1,18 +1,18 @@
 import React from 'react'
 import { ImageBackground, Text, View } from 'react-native'
 
-import { bgLogin } from '@/assets'
-import { ButtonLight, Container, InputText } from '@/components'
+import { bgRegister } from '@/assets'
+import { ButtonDark, Container, InputText } from '@/components'
 
-export const Login: React.FC = () => {
+export const Register: React.FC = () => {
   return (
     <Container>
       <View className='flex-1 justify-center items-center'>
         <View className='flex-1 bg-slate-500 w-full h-full'>
-          <ImageBackground source={bgLogin} className='w-full h-full'>
+          <ImageBackground source={bgRegister} className='w-full h-full'>
             <View className='bg-[#3C3A398a] w-full h-full items-center justify-end'>
-              <Text className='text-white text-2xl font-extrabold text-center'>Bem vindo de volta!</Text>
-              <Text className='text-zinc-300 text-sm mb-10 mt-3 text-center max-w-[250px]'>Vamos gerenciar suas finanças junto? O futuro só depende de você!</Text>
+              <Text className='text-white text-2xl font-extrabold text-center'>Novo por aqui!</Text>
+              <Text className='text-zinc-300 text-sm mb-10 mt-3 text-center max-w-[250px]'>Realize o seu cadastro e vamos planejar o seu futuro!</Text>
             </View>
           </ImageBackground>
         </View>
@@ -25,8 +25,8 @@ export const Login: React.FC = () => {
             className='my-5'
             secureTextEntry
           />
-          <ButtonLight
-            text='Entrar'
+          <ButtonDark
+            text='Cadastre-se'
           />
         </View>
       </View>

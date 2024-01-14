@@ -1,7 +1,9 @@
 import bgInitial from './bg_initial.png'
 import bgLogin from './bg_login.png'
+import bgRegister from './bg_register.png'
 
 export {
   bgInitial,
-  bgLogin
+  bgLogin,
+  bgRegister
 }
