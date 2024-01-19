@@ -3,8 +3,11 @@ import { ImageBackground, Text, View } from 'react-native'
 
 import { bgLogin } from '@/assets'
 import { ButtonLight, Container, InputText } from '@/components'
+import { useRouter } from 'expo-router'
 
 export const Login: React.FC = () => {
+  const router = useRouter()
+
   return (
     <Container>
       <View className='flex-1 justify-center items-center'>
@@ -27,6 +30,7 @@ export const Login: React.FC = () => {
           />
           <ButtonLight
             text='Entrar'
+            onPress={() => router.push('/home')}
           />
         </View>
       </View>

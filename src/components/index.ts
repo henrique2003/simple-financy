@@ -1,3 +1,3 @@
-export * from './buttons'
-export * from './inputs'
-export * from './container'
+export * from './atoms'
+export * from './molecules'
+export * from './organisms'

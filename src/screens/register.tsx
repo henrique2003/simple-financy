@@ -3,8 +3,11 @@ import { ImageBackground, Text, View } from 'react-native'
 
 import { bgRegister } from '@/assets'
 import { ButtonDark, Container, InputText } from '@/components'
+import { useRouter } from 'expo-router'
 
 export const Register: React.FC = () => {
+  const router = useRouter()
+
   return (
     <Container>
       <View className='flex-1 justify-center items-center'>
@@ -27,6 +30,7 @@ export const Register: React.FC = () => {
           />
           <ButtonDark
             text='Cadastre-se'
+            onPress={() => router.push('/home')}
           />
         </View>
       </View>
