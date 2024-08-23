@@ -1,3 +1,2 @@
 export * from './container'
-export * from './money-counter'
-export * from './navigation-list'
+export * from './banners'

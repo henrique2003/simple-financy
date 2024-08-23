@@ -24,7 +24,11 @@ const listItens: NavigationListButtonProps[] = [
 
 export const NavigationList: React.FC = () => {
   return (
-    <ScrollView className='w-full mt-2 pl-2.5' horizontal>
+    <ScrollView
+      className='w-full mt-2 pl-2.5'
+      horizontal
+      showsHorizontalScrollIndicator={false}
+    >
       {listItens.map(({ icon, text }, i) => <NavigationListButton key={i} icon={icon} text={text} />)}
     </ScrollView>
   )
